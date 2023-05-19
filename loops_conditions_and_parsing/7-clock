@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 #Writing Bash script that displays time for 12 hours and 59 minutes
-x=$(echo {0..12})
-y=$(echo {1..59})
+x=$x(echo {0..12})
+y=$y(echo {1..59})
 while [ "$x"="$y" ]
 do 
    echo "Hour: $x" 
    echo "Minute: $y" 
-x=$(( $x+1 ))
-y=$(( $y+1 ))
+x=$x(( $x+1 ))
+y=$y(( $y+1 ))
 done
