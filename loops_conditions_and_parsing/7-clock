@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
 #Writing Bash script that displays time for 12 hours and 59 minutes
-x=$x( echo {0..12} )
-y=$y( echo {1..59} )
-while [ "$x"="$y" ]
-do 
-   echo "Hour: $x" 
-   echo "Minute: $y" 
-x=$x(( $x+1 ))
-y=$y(( $y+1 ))
+hours=0
+minutes=1
+while [ $hours -lt 13 ];
+do
+	echo "Hour: $hours"
+	while [$minutes -lt 60];
+	do
+		echo $minutes
+		(($minutes+1))
+	done
+	(($minutes+1))
+	(($hours+1))
 done
