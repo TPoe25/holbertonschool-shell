@@ -2,6 +2,6 @@
 #using ifs while loops
 while IFS= read -r $USERNAME $GROUPID
 do
-printf= $USER
-printf= $GROUPID
-done
+printf=$USER
+printf=$GROUPID
+done < /etc/passwd
