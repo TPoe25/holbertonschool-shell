@@ -3,6 +3,6 @@
 v=$(ls)
 for x in $v
 do
-	file=$(echo "$v" | cut -d- -f2)
+	file=$(echo "$x" | cut -d- -f2)
 	printf "%s\n" "$file"
 done
