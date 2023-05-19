@@ -5,7 +5,7 @@ while [ $x -le 10 ]
 do
     if [ $x = 9 ]
     then
-	echo -e  "\nhi"
+	echo -e  "Best School\nHi"
     else
 	echo "Best School"
     fi
