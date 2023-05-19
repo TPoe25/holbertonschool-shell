@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 #how to display certain contents of file
 
 while
