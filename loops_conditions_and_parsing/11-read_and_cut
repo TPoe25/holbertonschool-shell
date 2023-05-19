@@ -4,5 +4,5 @@
 while
 read -r "/etc/passwd";
 do
-printf "%s $USER/n $USERID/n "$pwd" /n "
+printf "%s $USER/n $USERID/n ""$pwd"" /n "
 done
