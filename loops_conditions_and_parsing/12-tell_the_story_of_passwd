@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#using ifs while loops
 while IFS= read -r $USERNAME $GROUPID
 do
 printf= $USER
