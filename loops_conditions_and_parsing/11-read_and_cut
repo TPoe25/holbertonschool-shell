@@ -1,0 +1,8 @@
+#!/bin/env bash
+#how to display certain contents of file
+
+while
+read -r "/etc/passwd";
+do
+printf "%s $USER/n $USERID/n $pwd/n"
+done
