@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-#using ifs while loops
-while IFS= read -r $USERNAME $GROUPID
+#using IFS while loop
+while IFS= reade -r $USERNAME $GROUPID
 do
-printf=$USERNAME
-printf=$GROUPID
+	printf=$USERNAME
+	printf=$GROUPID
 done < /etc/passwd
