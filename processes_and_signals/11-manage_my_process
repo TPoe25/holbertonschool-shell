@@ -12,10 +12,16 @@ stop()
 }
 restart()
 {
+	kill manage_my_process
+	rm /var/run/my_process.pid
+	./manage_my_process
+	touch /var/run/my_process.pid > "$BASHPID"
+	echo "manage_my_process restarted"
+}
 	case "$1" in
-   start) start ;;
-   stop)  stop;;
-   *) echo "usage $0 start|stop" >&2
-      exit 1
-      ;;
+	start) start ;;
+	stop)  stop;;
+	*) echo "Usage: manage_my_process {start|stop|restart}" >&3
+		exit 1
+		;;
 esac
