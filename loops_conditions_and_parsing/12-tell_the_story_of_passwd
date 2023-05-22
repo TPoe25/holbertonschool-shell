@@ -2,6 +2,6 @@
 #using IFS while loop
 while IFS= reade -r "$USERNAME" " $GROUPID"
 do
-	printf=$USERNAME
-	printf=$GROUPID
-done < /etc/passwd
+	echo $USERNAME
+	echo $GROUPID
+done < "/etc/passwd"
