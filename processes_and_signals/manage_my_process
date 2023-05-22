@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#creating my process
+touch /tmp/my_process
+#!/usr/bin/env bash
+#managing my process
+while true
+do
+	echo "I am alive!"
+	sleep 2;
+done
