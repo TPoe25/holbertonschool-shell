@@ -1,3 +1,4 @@
+#!/bin/bash
 touch /var/run/myscript.pid
 #!/usr/bin/env bash
 #while loops
