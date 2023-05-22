@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #using IFS while loop
-while IFS= read -r $USERNAME $GROUPID
+while IFS= reade -r "$USERNAME" " $GROUPID"
 do
 	printf=$USERNAME
 	printf=$GROUPID
