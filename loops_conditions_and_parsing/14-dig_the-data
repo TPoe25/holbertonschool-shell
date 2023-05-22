@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-awk -f apache-access.log | sort -f 4 -f 7 | ls -l uniq -c
+#digging thru apache log file
+awk -f apache-access.log | sort -f 4 -f 7 | ls -l uniq
