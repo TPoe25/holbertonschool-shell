@@ -1,0 +1,3 @@
+#!/bin/bash
+#converting number from base 10 to base 16
+echo $((16#DECIMAL))
