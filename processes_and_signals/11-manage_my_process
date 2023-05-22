@@ -21,7 +21,7 @@ restart()
 	case "$1" in
 	start) start ;;
 	stop)  stop;;
-	*) echo "Usage: manage_my_process {start|stop|restart}" >&3
+	other) echo "Usage: manage_my_process {start|stop|restart}" >&3
 		exit 1
 		;;
 esac
