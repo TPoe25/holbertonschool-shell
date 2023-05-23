@@ -14,14 +14,14 @@ restart()
 {
 	kill manage_my_process
 	rm /var/run/my_process.pid
-	restart manage_my_process
+	start  manage_my_process
 	echo "$BASHPID" >> /var/run/my_process.pid
 	echo "manage_my_process restarted"
 }
 	case "$1" in
-	start) start ;;
-	stop)  stop;;
-	other) echo "Usage: manage_my_process {start|stop|restart}" >&2
-		exit 1
-		;;
+	start) 
+		start ;;
+	stop)  
+		stop;;
+	*) echo "Usage: manage_my_process {start|stop|restart}";;
 esac
