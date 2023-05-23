@@ -20,8 +20,14 @@ restart()
 }
 	case "$1"  in
 	start) 
-		start ;;
-	stop)  
-		stop;;
-	*) echo "Usage: manage_my_process {start|stop|restart}";;
+		start
+		;;
+	stop)
+		stop
+		;;
+	restart)
+		restart
+		;;
+	*)
+		echo "Usage: manage_my_process {start|stop|restart}";;
 esac
