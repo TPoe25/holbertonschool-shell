@@ -17,7 +17,7 @@ restart()
 	restart  manage_my_process
 	echo "manage_my_process restarted" >> /var/run/my_process.pid
 }
-	case "$1"  in
+	case "$1" in
 	start) 
 		start
 		;;
