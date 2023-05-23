@@ -29,7 +29,7 @@ restart()
 		stop
 		;;
 	restart)
-		start
+		restart
 		;;
 	*)
 		echo "Usage: manage_my_process {start|stop|restart}";;
