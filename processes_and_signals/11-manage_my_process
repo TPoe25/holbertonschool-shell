@@ -14,7 +14,7 @@ restart()
 {
 	kill manage_my_process
 	rm /var/run/my_process.pid
-	start  manage_my_process
+	restart  manage_my_process
 	echo "$BASHPID" >> /var/run/my_process.pid
 	echo "manage_my_process restarted"
 }
