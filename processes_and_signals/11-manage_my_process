@@ -3,7 +3,7 @@
 
 start() 
 {
-i	echo "manage_my_process started"
+	echo "manage_my_process started"
 }
 stop()
 {
@@ -14,8 +14,8 @@ restart()
 {
 	kill manage_my_process
 	rm /var/run/my_process.pid
-	restart  manage_my_process
-	echo "manage_my_process restarted" >> /var/run/my_process.pid
+	restart manage_my_process
+	echo "manage_my_process restarted"
 }
 	case "$1" in
 	start) 
@@ -25,7 +25,7 @@ restart()
 		stop
 		;;
 	restart)
-		restart
+		start
 		;;
 	*)
 		echo "Usage: manage_my_process {start|stop|restart}";;
