@@ -29,7 +29,6 @@ restart()
 		stop
 		;;
 	restart)
-		stop
 		start
 		;;
 	*)
