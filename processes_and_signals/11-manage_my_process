@@ -3,22 +3,21 @@
 
 start() 
 {
-	echo "$BASHPID" >> /var/run/my_process.pid
-	echo "manage_my_process started"
+	echo "manage_my_process started" >> /var/run/my_process.pid
+	echo "$PID"
 }
 stop()
 {
 	stop manage_my_process
-	rm /var/run/my_process.pid
-	echo "manage_my_process stopped"
+	rm /var/run/my_process.pid && echo "manage_my_process stopped"
 }
 restart()
 {
 	kill manage_my_process
 	rm /var/run/my_process.pid
 	restart  manage_my_process
-	echo "$BASHPID" >> /var/run/my_process.pid
-	echo "manage_my_process restarted"
+	echo "manage_my_process restarted" >> /var/run/my_process.pid
+	echo "$PID"
 }
 	case "$1"  in
 	start) 
