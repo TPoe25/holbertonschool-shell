@@ -18,7 +18,7 @@ restart()
 	echo "$BASHPID" >> /var/run/my_process.pid
 	echo "manage_my_process restarted"
 }
-	case  in
+	case "$1"  in
 	start) 
 		start ;;
 	stop)  
