@@ -3,7 +3,7 @@
 
 start() 
 {
-	echo "manage_my_process started" >> /var/run/my_process.pid
+i	echo "manage_my_process started"
 }
 stop()
 {
