@@ -12,11 +12,6 @@ stop()
 	rm /var/run/my_process.pid
 }
 
-	pkill -f manage_my_process
-	rm /var/run/my_process.pid
-	./manage_my_process &
-	echo "$!" > /var/run/my_process.pid
-
 case "$1" in
 	start) 
 		start
@@ -32,7 +27,7 @@ case "$1" in
 		echo "manage_my_process restarted"
 		;;
 	*)
-		echo "Usage: manage_my_process {start|stop|restart}";;
+		echo "Usage: manage_my_process {start|stop|restart}"
 		exit 1
 		;;
 esac
